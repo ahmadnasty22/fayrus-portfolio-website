@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Muhammad Syach Fayrus — Informatics Student</title>
+  <meta name="description" content="Personal website of Muhammad Syach Fayrus, an Informatics student at Universitas Jambi who codes, runs, and captures moments through cinematic visuals.">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="author" content="Muhammad Syach Fayrus">
+
+  <!-- Open Graph / social preview.
+       NOTE: og:image works best as an absolute URL. After deploying, change it to
+       e.g. https://your-site.vercel.app/assets/images/profile.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Syach Fayrus — Informatics Student">
+  <meta property="og:description" content="Building things, learning continuously. Informatics student who codes, runs, and captures moments through cinematic visuals.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tiny "M" favicon (no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d10'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='19' font-weight='700' text-anchor='middle' fill='%23c6e070'%3EM%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Space Grotesk (display) + Manrope (body). System fonts are used as fallback. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="logo" href="#top" aria-label="Muhammad Syach Fayrus, back to top">PORTOFOLIO PROFILE<span class="logo__dot">.</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cinematic">Cinematic</a></li>
+          <li><a href="#running">Running</a></li>
+          <li><a href="#connect">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+
+        <div class="hero__copy">
+          <p class="hero__eyebrow">Informatics Student - Universitas Jambi</p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span>Muhammad</span></span>
+            <span class="line"><span>Syach Fayrus<span class="hero__stop">.</span></span></span>
+          </h1>
+
+          <p class="hero__tagline">Keep Learning and Growing</p>
+
+          <p class="hero__desc">
+            I'm just an ordinary human being living life, 
+            becoming a little better every day, 
+            learning from every experience, 
+            chasing the things that matter, 
+            and enjoying the journey along the way.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View My Work</a>
+            <a class="btn btn--ghost" href="#cinematic">Explore Cinematic</a>
+          </div>
+
+          <div class="hero__meta">
+            <p class="hero__roles">Informatics Student • Developer in Progress • Problem Solver • Runner</p>
+            <p class="hero__interests">Also interested in cinematic videography, visual storytelling, photography, and running.</p>
+          </div>
+        </div>
+
+        <!-- Profile photo: replace assets/images/profile.jpg (portrait 4:5 works best) -->
+        <figure class="hero__visual">
+          <div class="hero__photo img-reveal">
+            <img src="assets/images/profile.jpg" width="1200" height="1500" fetchpriority="high"
+                 alt="Portrait of Muhammad Syach Fayrus">
+          </div>
+          <figcaption class="hero__caption">
+            <span>Jambi, Indonesia</span>
+            <span>Developer in progress.</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- The three sides of the site: they should feel like one person, not three tabs -->
+    <section class="pillars" aria-label="Tech, life, and visual">
+      <div class="container pillars__grid">
+        <div class="pillar reveal">
+          <p class="pillar__title">Tech</p>
+          <p class="pillar__text">Coding • Informatics • Projects</p>
+        </div>
+        <div class="pillar reveal">
+          <p class="pillar__title">Life</p>
+          <p class="pillar__text">Studying • Editing • Running</p>
+        </div>
+        <div class="pillar reveal">
+          <p class="pillar__title">Visual</p>
+          <p class="pillar__text">Cinematic • Photography • Storytelling</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+
+        <div class="about__head">
+          <h2 class="section__title reveal-lines" id="about-title"><span class="line"><span>About Me</span></span></h2>
+        </div>
+
+        <div class="about__text reveal">
+          <p class="about__lead">
+            I study Informatics at Universitas Jambi. Most of what I know so far comes from
+            building things: coursework, small experiments, and the occasional program that
+            breaks in a way I didn’t expect. I like programming, and I like finding out why
+            something works.
+          </p>
+          <p>
+            When I’m not at a screen, I’m usually running long distances or holding a camera.
+            I like recording moments, places, and whatever I happen to be doing that day.
+            Filming makes me look at ordinary things a bit longer than I normally would.
+          </p>
+          <p>This site is where those habits end up in one place.</p>
+        </div>
+
+        <!-- Campus photo: replace assets/images/campus.jpg -->
+        <figure class="about__figure">
+          <div class="frame img-reveal">
+            <img src="assets/images/campus.jpg" width="1600" height="1000" loading="lazy"
+                 alt="Universitas Jambi campus">
+          </div>
+          <figcaption class="caption">Universitas Jambi, Jambi</figcaption>
+        </figure>
+
+        <dl class="facts reveal">
+          <div class="facts__row">
+            <dt>Based in</dt>
+            <dd>Jambi, Indonesia</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Studying</dt>
+            <dd>Informatics, Universitas Jambi</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Focus</dt>
+            <dd>Software &amp; Computer Science</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Away from code</dt>
+            <dd>Long-distance running, cinematic videography, photography</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Currently</dt>
+            <dd>Learning &amp; building</dd>
+          </div>
+        </dl>
+
+      </div>
+    </section>
+
+    <!-- ============================== SKILLS ============================== -->
+    <section class="section section--tight" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal-lines" id="skills-title"><span class="line"><span>The Tools Used</span></span></h2>
+          <p class="section__sub reveal">What I’ve used for coursework and personal projects so far.</p>
+        </div>
+
+        <div class="skills stagger">
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Programming</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>MIPS Assembly</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Tools</h3>
+            <ul class="skill-list">
+              <li>VS Code</li>
+              <li>Git &amp; GitHub</li>
+              <li>WSL Ubuntu</li>
+              <li>Google Colab</li>
+              <li>MARS MIPS Simulator</li>
+              <li>Oracle Database</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Areas</h3>
+            <ul class="skill-list">
+              <li>Software Development</li>
+              <li>Programming</li>
+              <li>Computer Science</li>
+              <li>Database</li>
+              <li>Algorithms &amp; Data Structures</li>
+              <li>Operating Systems</li>
+              <li>Web Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal-lines" id="projects-title"><span class="line"><span>Selected Projects</span></span></h2>
+          <p class="section__sub reveal">Coursework and personal experiments. All of it is student work.</p>
+        </div>
+
+        <!--
+          HOW TO EDIT A PROJECT
+          Copy one <li class="project"> block, then change the title, description,
+          technology tags and the GitHub link (point it at the specific repository).
+          Optional image: add <img class="project__image" src="assets/images/your-image.jpg" alt="..." loading="lazy">
+          inside .project__main, above the <h3>.
+        -->
+        <ul class="project-list">
+
+          <li class="project reveal">
+            <div class="project__main">
+              <h3 class="project__title">Pengenalan Pemrograman</h3>
+              <p class="project__desc">
+                A collection of programming exercises, assignments, and small projects
+                created while learning programming fundamentals.
+              </p>
+            </div>
+            <p class="project__tech">Python, coursework</p>
+            <a class="project__link" href="https://github.com/ahmadnasty22" target="_blank" rel="noopener noreferrer"
+               aria-label="View Pengenalan Pemrograman on GitHub (opens in a new tab)">View on GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+
+          <li class="project reveal">
+            <div class="project__main">
+              <h3 class="project__title">Basis Data &amp; ERD </h3>
+              <p class="project__desc">
+                Academic work involving ERD, normalization, relationships, and database design.
+              </p>
+            </div>
+            <p class="project__tech">Oracle, database design</p>
+            <a class="project__link" href="https://github.com/ahmadnasty22" target="_blank" rel="noopener noreferrer"
+               aria-label="View Database and ERD Work on GitHub (opens in a new tab)">View on GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+
+          <li class="project reveal">
+            <div class="project__main">
+              <h3 class="project__title">Concurrency Experiments</h3>
+              <p class="project__desc">
+                Experiments with pthreads, mutexes, condition variables, parallel processing,
+                and thread pools.
+              </p>
+            </div>
+            <p class="project__tech">C, operating systems</p>
+            <a class="project__link" href="https://github.com/ahmadnasty22" target="_blank" rel="noopener noreferrer"
+               aria-label="View Concurrency Experiments on GitHub (opens in a new tab)">View on GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+
+          <li class="project reveal">
+            <div class="project__main">
+              <h3 class="project__title">This Website</h3>
+              <p class="project__desc">
+                A static personal site written by hand with HTML, CSS, and vanilla JavaScript.
+                No frameworks, no build step.
+              </p>
+            </div>
+            <p class="project__tech">HTML, CSS, JavaScript</p>
+            <a class="project__link" href="https://github.com/ahmadnasty22" target="_blank" rel="noopener noreferrer"
+               aria-label="View This Website on GitHub (opens in a new tab)">View on GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== CINEMATIC ============================== -->
+    <section class="section section--film" id="cinematic" aria-labelledby="cinematic-title">
+      <div class="container">
+
+        <div class="section__head section__head--split">
+          <h2 class="section__title reveal-lines" id="cinematic-title"><span class="line"><span>Cinematic</span></span></h2>
+          <p class="section__sub reveal">A collection of moments, places, and stories captured through my camera.</p>
+        </div>
+
+        <!--
+          VIDEO GALLERY
+          Each button below opens the lightbox. Everything is editable through data-* attributes:
+            data-video  : path to the video file (assets/videos/...)
+            data-poster : thumbnail shown before the video plays
+            data-title  : title shown in the lightbox
+            data-meta   : small line under/above the title
+            data-embed  : OPTIONAL. If set, an iframe is used instead of the local file.
+
+          VIDEO FILES TOO BIG FOR GITHUB / VERCEL?
+          GitHub blocks files over 100 MB and big videos slow the site down.
+          Upload the video to YouTube (unlisted works well) or Vimeo instead, then add
+            data-embed="https://www.youtube.com/embed/VIDEO_ID"     (YouTube)
+            data-embed="https://player.vimeo.com/video/VIDEO_ID"    (Vimeo)
+          to the button and remove data-video. The thumbnail in assets/thumbnails/ still works.
+        -->
+        <div class="film-grid">
+
+          <article class="film film--lead reveal">
+            <button class="film__trigger" type="button"
+                    data-video="assets/videos/cinematic-01.mp4"
+                    data-poster="assets/thumbnails/cinematic-01.jpg"
+                    data-title="UNIVERSITAS JAMBI"
+                    data-meta="Gedung Hexagonal/ 2026"
+                    aria-label="Play video: UNIVERSITAS JAMBI">
+              <img src="assets/thumbnails/cinematic-01.jpg" width="1600" height="900" loading="lazy"
+                   alt="Thumbnail for the video UNIVERSITAS JAMBI">
+              <span class="film__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+              </span>
+            </button>
+            <div class="film__cap">
+              <span class="film__idx">01</span>
+              <h3 class="film__title">UNIVERSITAS JAMBI</h3>
+              <span class="film__meta">Gedung Hexagonal / 2026</span>
+            </div>
+          </article>
+
+          <article class="film reveal">
+            <button class="film__trigger" type="button"
+                    data-video="assets/videos/cinematic-02.mp4"
+                    data-poster="assets/thumbnails/cinematic-02.jpg"
+                    data-title="STUDENT CENTER"
+                    data-meta="Student Center / 2026"
+                    aria-label="Play video: STUDENT CENTER">
+              <img src="assets/thumbnails/cinematic-02.jpg" width="1600" height="900" loading="lazy"
+                   alt="Thumbnail for the video STUDENT CENTER">
+              <span class="film__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+              </span>
+            </button>
+            <div class="film__cap">
+              <span class="film__idx">02</span>
+              <h3 class="film__title">STUDENT CENTER</h3>
+              <span class="film__meta">Student Center / 2026</span>
+            </div>
+          </article>
+
+          <article class="film reveal">
+            <button class="film__trigger" type="button"
+                    data-video="assets/videos/cinematic-03.mp4"
+                    data-poster="assets/thumbnails/cinematic-03.jpg"
+                    data-title="IFORIA 2026"
+                    data-meta="Laboratorium Terpadu / 2026"
+                    aria-label="Play video: IFORIA 2026">
+              <img src="assets/thumbnails/cinematic-03.jpg" width="1600" height="900" loading="lazy"
+                   alt="Thumbnail for the video IFORIA 2026">
+              <span class="film__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+              </span>
+            </button>
+            <div class="film__cap">
+              <span class="film__idx">03</span>
+              <h3 class="film__title">IFORIA 2026</h3>
+              <span class="film__meta">Laboratorium Terpadu / 2026</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Stills: photos laid out like pages in a photo book. Replace the files in assets/images/. -->
+        <div class="stills">
+          <div class="stills__head reveal">
+            <h3 class="stills__title">Stills</h3>
+            <p class="stills__sub">Frames from campus, daily life, and behind the camera.</p>
+          </div>
+
+          <div class="stills__grid">
+            <figure class="still still--a">
+              <div class="frame img-reveal">
+                <img src="assets/images/frame-01.jpg" width="1600" height="1000" loading="lazy"
+                     alt="A still frame from a campus shoot">
+              </div>
+              <figcaption class="caption">Infomatic People's</figcaption>
+            </figure>
+
+            <figure class="still still--b">
+              <div class="frame img-reveal">
+                <img src="assets/images/daily-life.jpg" width="1200" height="1500" loading="lazy"
+                     alt="A moment from daily life">
+              </div>
+              <figcaption class="caption">First Day At Universitas Jambi</figcaption>
+            </figure>
+
+            <figure class="still still--c">
+              <div class="frame img-reveal">
+                <img src="assets/images/behind-the-scenes.jpg" width="1200" height="1500" loading="lazy"
+                     alt="Behind the scenes while filming">
+              </div>
+              <figcaption class="caption">Pawang Koni</figcaption>
+            </figure>
+
+            <figure class="still still--d">
+              <div class="frame img-reveal">
+                <img src="assets/images/frame-02.jpg" width="1600" height="1000" loading="lazy"
+                     alt="A still frame from a video">
+              </div>
+              <figcaption class="caption">Anak Buah Karan</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================== RUNNING ============================== -->
+    <section class="section" id="running" aria-labelledby="running-title">
+      <div class="container running">
+
+        <div class="running__body">
+          <div class="section__head">
+            <h2 class="section__title reveal-lines" id="running-title"><span class="line"><span>Running</span></span></h2>
+            <p class="section__sub reveal">Another way I spend time outside the screen.</p>
+          </div>
+
+          <p class="running__intro reveal">
+            Running keeps me disciplined, and it resets my head after too many
+            hours in front of a screen.
+          </p>
+
+          <!-- Personal bests: edit time and date here -->
+          <dl class="pb-list">
+            <div class="pb reveal">
+              <dt class="pb__dist">5K</dt>
+              <dd class="pb__time">19:41</dd>
+              <dd class="pb__date">3 Sep 2025</dd>
+            </div>
+            <div class="pb reveal">
+              <dt class="pb__dist">10K</dt>
+              <dd class="pb__time">41:28</dd>
+              <dd class="pb__date">8 Jan 2026</dd>
+            </div>
+            <div class="pb reveal">
+              <dt class="pb__dist">15K</dt>
+              <dd class="pb__time">1:11:26</dd>
+              <dd class="pb__date">30 Oct 2025</dd>
+            </div>
+            <div class="pb reveal">
+              <dt class="pb__dist">21K</dt>
+              <dd class="pb__time">1:53:52</dd>
+              <dd class="pb__date">20 Aug 2025</dd>
+            </div>
+          </dl>
+
+          <a class="btn btn--ghost running__cta" href="https://www.strava.com/athletes/89751866"
+             target="_blank" rel="noopener noreferrer" aria-label="View Strava profile (opens in a new tab)">View Strava <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <!-- Running photo: replace assets/images/running.jpg -->
+        <figure class="running__figure">
+          <div class="frame img-reveal">
+            <img src="assets/images/personal best.png" width="1200" height="1500" loading="lazy"
+                 alt="Muhammad Syach Fayrus running">
+          </div>
+          <figcaption class="caption">Almost Die</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ============================== CONNECT ============================== -->
+    <section class="section section--tight" id="connect" aria-labelledby="connect-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal-lines" id="connect-title"><span class="line"><span>Connect With Me</span></span></h2>
+        </div>
+
+        <!-- Social links: change the href and the handle text -->
+        <ul class="connect-list">
+          <li class="reveal">
+            <a class="connect-link" href="https://github.com/ahmadnasty22" target="_blank" rel="noopener noreferrer">
+              <span class="connect-link__name">GitHub</span>
+              <span class="connect-link__handle">ahmadnasty22 <span aria-hidden="true">↗</span></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="connect-link" href="https://www.instagram.com/fayruss__?igsi=NmdocDNzbDM1N3hs" target="_blank" rel="noopener noreferrer">
+              <span class="connect-link__name">Instagram</span>
+              <span class="connect-link__handle">@fayruss__ <span aria-hidden="true">↗</span></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="connect-link" href="https://www.strava.com/athletes/89751866" target="_blank" rel="noopener noreferrer">
+              <span class="connect-link__name">Strava</span>
+              <span class="connect-link__handle">Fayrus Nasution <span aria-hidden="true">↗</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="contact__title reveal-lines" id="contact-title">
+          
+          <span class="line"><span>Collab?<span class="hero__stop">.</span></span></span>
+        </h2>
+
+        <p class="contact__text reveal">
+          Interested in collaborating, talking about technology, running, or video editing?
+          Feel free to reach out.
+        </p>
+
+        <!-- Replace with your real email address (in both the href and the text) -->
+        <a class="contact__mail reveal" href="mailto:syachfayruz1@gmail.com">syachfayruz1@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 Muhammad Syach Fayrus</p>
+      <p class="site-footer__built">Built with HTML, CSS, and JavaScript</p>
+      <a class="site-footer__top" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- ============================== VIDEO LIGHTBOX ==============================
+       One shared <dialog>. script.js fills it when a video button is clicked.
+       - <dialog> gives us Esc-to-close, focus trapping and a proper backdrop for free.
+       - The video starts muted (no surprise sound). Use the player's volume control for audio.
+       - The player's own controls provide play/pause, volume and fullscreen. -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox__inner">
+      <div class="lightbox__bar">
+        <div>
+          <p class="lightbox__meta" id="lightbox-meta"></p>
+          <h2 class="lightbox__title" id="lightbox-title"></h2>
+        </div>
+        <button class="lightbox__close" type="button" aria-label="Close video">
+          <span>Close</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+        </button>
+      </div>
+
+      <div class="lightbox__stage">
+        <video id="lightbox-video" controls playsinline muted preload="metadata">
+          <!-- Fallback text for browsers that cannot play the video -->
+          Your browser can’t play this video. Try a recent version of Chrome, Firefox, Safari, or Edge.
+        </video>
+
+        <!-- Filled by script.js only when a button uses data-embed (YouTube / Vimeo) -->
+        <div class="lightbox__embed" id="lightbox-embed" hidden></div>
+
+        <p class="lightbox__error" id="lightbox-error" role="alert" hidden>
+          This video couldn’t be loaded. Check that the file exists at the path set in <code>data-video</code>.
+        </p>
+      </div>
+
+      <p class="lightbox__hint">Playing without sound. Use the volume control in the player to turn it on.</p>
+    </div>
+  </dialog>
+  
+  <!-- Music Player -->
+<div class="music-player" id="musicPlayer">
+  <button class="music-player__toggle" id="musicToggle" aria-label="Play music">
+    <span id="musicIcon">▶</span>
+  </button>
+
+  <div class="music-player__info">
+    <span class="music-player__label">NOW PLAYING</span>
+    <span class="music-player__title" id="musicTitle">Surabaya</span>
+    <span class="music-player__artist">Crayon Case</span>
+  </div>
+
+  <button class="music-player__next" id="musicNext" aria-label="Next song">
+    ›
+  </button>
+
+  <audio id="backgroundMusic" preload="metadata"></audio>
+</div>
+</body>
+</html>
